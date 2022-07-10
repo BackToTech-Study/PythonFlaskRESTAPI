@@ -235,7 +235,7 @@ def random_value_to_transfer_object(dbo):
     transferObject.value = dbo.value
     return transferObject
 ```
-*Add the function to map a transfer object to a database object.
+* Add the function to map a transfer object to a database object.
 ```python
 def transfer_object_to_random_value(transferObject):
     dbo = RandomValue()
