@@ -3,8 +3,6 @@ from datetime import datetime
 
 from flask import Blueprint
 
-# Define the blueprint
-# the url_prefix parameter is optional
 status = Blueprint('status', __name__)
 
 
