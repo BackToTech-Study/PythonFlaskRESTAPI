@@ -1,7 +1,7 @@
 import http
 from datetime import datetime
 
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 status = Blueprint('status', __name__)
 
@@ -11,3 +11,8 @@ status = Blueprint('status', __name__)
 @status.route('/now', methods=['GET'])
 def echo():
     return str(datetime.now()), http.HTTPStatus.OK
+
+
+@status.route('/hello', methods=['GET'])
+def hello():
+    return render_template('hello.html')
